@@ -1,0 +1,43 @@
+<div class="profile-wrapper">
+  <div class="profile-card" *ngIf="profileData">
+    <div class="profile-header">
+      <div class="avatar">
+        <span>{{ profileData.name.charAt(0).toUpperCase() }}</span>
+      </div>
+      <h2>{{ profileData.name }}</h2>
+      <p class="email">{{ profileData.email }}</p>
+      <button class="edit-btn" (click)="toggleEdit()">Edit</button>
+    </div>
+
+    <!-- View Mode -->
+    <div class="profile-body" *ngIf="!isEditing">
+      <div class="profile-info">
+        <p><strong>Phone:</strong> {{ profileData.phoneNumber }}</p>
+        <p><strong>Gender:</strong> {{ profileData.gender }}</p>
+        <p><strong>City:</strong> {{ profileData.city }}</p>
+        <p><strong>College:</strong> {{ profileData.collegeName }}</p>
+        <p><strong>Degree:</strong> {{ profileData.degree }}</p>
+        <p><strong>Year:</strong> {{ profileData.yearOfStudy }}</p>
+      </div>
+    </div>
+
+    <!-- Edit Mode -->
+    <div class="profile-body" *ngIf="isEditing">
+      <div class="profile-info">
+        <p><strong>Name:</strong> <input [(ngModel)]="editableProfile.name" /></p>
+        <p><strong>Phone:</strong> <input [(ngModel)]="editableProfile.phoneNumber" /></p>
+        <p><strong>Gender:</strong> <input [(ngModel)]="editableProfile.gender" /></p>
+        <p><strong>City:</strong> <input [(ngModel)]="editableProfile.city" /></p>
+        <p><strong>College:</strong> <input [(ngModel)]="editableProfile.collegeName" /></p>
+        <p><strong>Degree:</strong> <input [(ngModel)]="editableProfile.degree" /></p>
+        <p><strong>Year:</strong> <input [(ngModel)]="editableProfile.yearOfStudy" /></p>
+      </div>
+      <div class="edit-actions">
+        <button class="save-btn" (click)="saveProfile()">Save</button>
+        <button class="cancel-btn" (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <p *ngIf="!profileData" class="loading">Loading profile...</p>
+</div>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 60px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  margin-top: 70px;
+}
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.1); /* Lightened transparency for a more subtle card color */
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(108, 68, 255, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.6s ease-in-out;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #250a39, #5e3074, #3d3256);   
+  color: #fff;
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(15px); /* Apply blur for Glassmorphism */
+  border-radius: 16px 16px 0 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff55; /* Slight transparency */
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  margin-top: 12px;
+  background-color: #ffffff33;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ffffff55;
+}
+.profile-body {
+  padding: 24px;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.profile-info strong {
+  font-weight: 600;
+  color: #c59eff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn {
+  background-color: #6a11cb;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #580ea3;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #c2c2c2;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,34 @@
+<div class="login-page">
+  <div class="login-container" id="login-container">
+    <h2 id="login-title">Login</h2>
+    <form id="login-form" [formGroup]="loginForm" (ngSubmit)="submitForm()">
+      <div class="form-group" id="email-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="form-control"
+          formControlName="email"
+        />
+      </div>
+
+      <div class="form-group" id="password-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          formControlName="password"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <button type="submit" class="btn" id="login-button">
+        Login
+      </button>
+    </form>
+  </div>
+</div>

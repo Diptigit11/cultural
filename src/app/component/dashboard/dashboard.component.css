@@ -1,0 +1,114 @@
+
+  .dashboard-page {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    max-width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    border-radius: 15px;
+  }
+
+  /* Dashboard Header */
+  .dashboard-header {
+    padding: 30px 20px;
+    margin-top: 55px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(113, 47, 255, 0.1);
+  }
+
+  .profile-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #6a11cb; /* Profile initials color */
+    margin-bottom: 20px;
+  }
+
+  .profile-initials {
+    font-weight: bold;
+  }
+
+  .dashboard-header h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  /* My Events Section */
+  .my-events {
+    margin-top: 40px;
+  }
+
+  .my-events h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .events-list {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    animation: scrollEffect 15s linear infinite;
+  }
+
+  .event-card {
+    background: linear-gradient(135deg, #250a39, #5e3074, #3d3256);   
+     padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(39, 1, 79, 0.1);
+    transition: all 0.3s ease;
+    color: #fff;
+    min-width: 250px;
+    flex-shrink: 0;
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .event-card h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .event-card p {
+    color: #ccc;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    background-color: #2e0063;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #3b1c5d;
+  }
+
+  .logout-btn {
+    background-color: #ff4e42;
+  }
+
+  .logout-btn:hover {
+    background-color: #e03b2a;
+  }
+

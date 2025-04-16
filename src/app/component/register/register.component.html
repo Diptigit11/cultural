@@ -1,0 +1,41 @@
+<div class="page-container">
+  <div class="form-wrapper">
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm()" class="registration-form">
+      <h2>Register for Fusion Fest 2025</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" formControlName="name" required />
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" formControlName="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" formControlName="password" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" formControlName="phoneNumber" required />
+
+      <label for="college">College Name</label>
+      <input type="text" id="college" name="college" formControlName="collegeName" required />
+
+      <label for="degree">Degree</label>
+      <input type="text" id="degree" name="degree" formControlName="degree" required />
+
+      <label for="yearOfStudy">Year of Study</label>
+      <input type="number" id="yearOfStudy" name="yearOfStudy" min="1" max="5" formControlName="yearOfStudy" required />
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" formControlName="city" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" formControlName="gender" required>
+        <option value="">Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+  </div>
+</div>

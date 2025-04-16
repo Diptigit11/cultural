@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background-color: #121212;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+.highlight {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  padding: 0.8rem 2rem;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Icon Boxes Below the Text */
+.icon-content {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.icon-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 150px;
+  height: 150px; /* Reduced the height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-box i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff416c;
+}
+
+.icon-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}

@@ -329,13 +329,7 @@
     margin-right: 0.6rem;
   }
   
-  /* Landing Page */
-  .landing {
-    position: relative;
-    background: url("./app/assets/img/dashboard.jpg") no-repeat center
-      center/cover;
-    height: 100vh;
-  }
+
   
   .landing-inner {
     color: #fff;
